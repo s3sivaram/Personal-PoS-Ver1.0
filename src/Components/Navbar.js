@@ -4,7 +4,7 @@ import Tab from "@mui/material/Tab";
 import { useState } from "react";
 import Inventory from "./Inventory";
 import Pos from "./Pos";
-import { AppBar } from "@mui/material";
+import { AppBar, Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +23,14 @@ export const Navbar = () => {
 
   return (
     <>
-      <AppBar>S3 PoS - s3sivaram@gmail.com</AppBar>
+      <AppBar>
+        <Box style={{ display: "flex", justifyContent: "space-between" }}>
+          <Box style={{ textAlign: "left" }}>
+            A Personal Point of Sale system
+          </Box>
+          <Box style={{ textAlign: "right" }}>s3sivaram@gmail.com</Box>
+        </Box>
+      </AppBar>
       <Tabs
         value={value}
         onChange={handleChange}
