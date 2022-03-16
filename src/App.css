@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  background-color: lightgrey;
+}
+
+.container {
+  background-color: darkgrey;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
